@@ -63,4 +63,77 @@ input {
   gap: 1em;
 }
 
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.bg-dark {
+  background-color: #0B0D17;
+}
+.bg-accent {
+  background-color: #d2d8f9;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-dark {
+  color: #0B0D17;
+}
+.text-accent {
+  color: #d2d8f9;
+}
+.text-white {
+  color: #ffffff;
+}
+
+.fs-200 {
+  font-size: 0.875rem;
+}
+.fs-300 {
+  font-size: 1rem;
+}
+.fs-400 {
+  font-size: 1.125rem;
+}
+.fs-500 {
+  font-size: 1.75rem;
+}
+.fs-600 {
+  font-size: 2rem;
+}
+.fs-700 {
+  font-size: 3.5rem;
+}
+.fs-800 {
+  font-size: 6.25rem;
+}
+.fs-900 {
+  font-size: 9.375rem;
+}
+
+.ff-serif {
+  font-family: "Bellfair", serif;
+}
+.ff-sans-cond {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.ff-sans-normal {
+  font-family: "Barlow", sans-serif;
+}
+
 /*# sourceMappingURL=main.css.map */
