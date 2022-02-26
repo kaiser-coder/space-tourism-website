@@ -32,64 +32,33 @@
 }
 
 .bg {
-   &-dark {
-      background-color: $dark;
-   }
-   &-accent {
-      background-color: $accent;
-   }
-   &-white  {
-      background-color: $white;
+   @each $name, $value in $colors {
+      &-#{$name}  {
+         background-color: $value;
+      }
    }
 }
 
 .text {
-   &-dark {
-      color: $dark;
-   }
-   &-accent {
-      color: $accent;
-   }
-   &-white  {
-      color: $white;
+   @each $name, $value in $colors {
+      &-#{$name}  {
+         color: $value;
+      }
    }
 }
 
 .fs {
-   &-200 {
-      font-size: 0.875rem;
-   }
-   &-300 {
-      font-size: 1rem;
-   }
-   &-400 {
-      font-size: 1.125rem;
-   }
-   &-500 {
-      font-size: 1.75rem;
-   }
-   &-600 {
-      font-size: 2rem;
-   }
-   &-700 {
-      font-size: 3.5rem;
-   }
-   &-800 {
-      font-size: 6.25rem;
-   }
-   &-900 {
-      font-size: 9.375rem;
+   @each $name, $value in $font-sizes {
+      &-#{$name} {
+         font-size: $value;
+      }
    }
 }
 
 .ff {
-   &-serif {
-      font-family: $serif;
-   }
-   &-sans-cond {
-      font-family: $condensed;
-   }
-   &-sans-normal {
-      font-family: $normal;
+   @each $name, $value in $fonts {
+      &-#{$name} {
+         font-family: $value;
+      }
    }
 }

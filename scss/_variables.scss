@@ -1,9 +1,24 @@
 $gap: 1em;
 
-$dark: #0B0D17;
-$accent: #d2d8f9;
-$white: #ffffff;
+$colors: (
+   "dark": #0B0D17,
+   "accent": #d2d8f9,
+   "white": #ffffff
+);
 
-$serif: "Bellfair", serif;
-$condensed: "Barlow Condensed", sans-serif;
-$normal: "Barlow", sans-serif;
+$fonts: (
+   "serif": "Bellfair, serif",
+   "sans-cond": "Barlow Condensed, sans-serif",
+   "sans-normal": "Barlow, sans-serif"
+);
+
+$font-sizes: (
+   "200": 0.875rem,
+   "300": 1rem,
+   "400": 1.125rem,
+   "500": 1.75rem,
+   "600": 2rem,
+   "700": 3.5rem,
+   "800": 6.25rem,
+   "900": 9.375rem,
+);
