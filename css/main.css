@@ -148,4 +148,66 @@ input {
   font-family: "Barlow", sans-serif;
 }
 
+/* 
+ * Header style rules
+ */
+.content {
+  padding-top: 40px;
+  min-height: 100vh;
+}
+
+header {
+  flex-direction: row;
+  align-items: center;
+}
+header nav {
+  max-width: 830px;
+}
+header nav .navbar-list {
+  flex-direction: row;
+  background-color: aqua;
+  padding-left: 123px;
+  padding-right: 165px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+}
+header nav .navbar-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+header nav .navbar-list a span {
+  font-weight: bold;
+}
+header nav .navbar-list li {
+  padding-inline: 9px;
+  padding-top: 39px;
+  padding-bottom: 35px;
+  border-bottom: 3px solid transparent;
+}
+header nav .navbar-list li.active, header nav .navbar-list li:hover {
+  border-bottom: 3px solid #ffffff;
+}
+header .blank-line {
+  height: 1px;
+  width: 343px;
+  display: block;
+  position: relative;
+  z-index: 10;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  left: 50px;
+}
+
+#home {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
 /*# sourceMappingURL=main.css.map */
