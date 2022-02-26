@@ -1,0 +1,13 @@
+/* 
+ * CSS utilites
+ */
+
+.flex {
+   display: flex;
+   gap: $gap;
+}
+
+.grid {
+   display: grid;
+   gap: $gap;
+}
