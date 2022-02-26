@@ -1,0 +1,11 @@
+{
+  "name": "space-tourism-website",
+  "version": "1.0.0",
+  "description": "A simple integration training with Space Tourism website",
+  "main": "index.js",
+  "author": "kaiser-coder",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
