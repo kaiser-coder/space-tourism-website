@@ -56,9 +56,13 @@
 }
 
 .ff {
-   @each $name, $value in $fonts {
-      &-#{$name} {
-         font-family: $value;
-      }
+   &-serif {
+      font-family: "Bellfair", serif,
    }
+   &-sans-cond {
+      font-family: "Barlow Condensed", sans-serif
+   }
+   &-sans-normal {
+      font-family: "Barlow", sans-serif
+   } 
 }
