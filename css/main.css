@@ -152,8 +152,9 @@ input {
 */
 .content {
   padding-top: 40px;
-  min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  height: 100vh;
+  justify-content: space-between;
 }
 .content h1 {
   line-height: 172px;
@@ -196,6 +197,10 @@ input {
   text-decoration: none;
 }
 
+#title {
+  width: 100%;
+}
+
 .section-title {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
@@ -203,6 +208,7 @@ input {
   letter-spacing: 4.725px;
   margin-top: 76px;
   margin-bottom: 64px;
+  margin-left: 3em;
 }
 .section-title span {
   font-weight: bold;
@@ -288,6 +294,7 @@ header .blank-line {
   background-image: url("../assets/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  flex-direction: column;
 }
 #destination #content {
   margin-bottom: 112px;
@@ -310,6 +317,29 @@ header .blank-line {
 }
 #destination #content .navbar-list a {
   text-decoration: none;
+}
+
+#crew {
+  background-image: url("../assets/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+#crew .section-title {
+  margin-bottom: 0;
+}
+#crew #content h3 {
+  line-height: 37px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+#crew #content h1 {
+  line-height: 64px;
+  margin-bottom: 27px;
+}
+#crew #content .column1 {
+  max-width: 488px !important;
 }
 
 /*# sourceMappingURL=main.css.map */

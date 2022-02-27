@@ -73,8 +73,9 @@
 
 .content {
    padding-top: 40px;
-   min-height: 100vh;
-   overflow: hidden;
+   overflow-x: hidden;
+   height: 100vh;
+   justify-content: space-between;
 
    h1 {
       line-height: 172px;
@@ -123,6 +124,10 @@
    }
 }
 
+#title {
+   width: 100%;
+}
+
 .section-title {
    font-family: 'Barlow Condensed', sans-serif;
    text-transform: uppercase;
@@ -130,6 +135,7 @@
    letter-spacing: 4.725px;
    margin-top: 76px;
    margin-bottom: 64px;
+   margin-left: 3em;
 
    span {
       font-weight: bold;

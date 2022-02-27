@@ -1,0 +1,25 @@
+#crew {
+   @include Background('../assets/crew/background-crew-desktop.jpg');
+
+   flex-direction: column;
+
+   .section-title {
+      margin-bottom: 0;
+   }
+
+   #content {
+      h3 {
+         line-height: 37px;
+         text-transform: uppercase;
+         mix-blend-mode: normal;
+         opacity: 0.5;
+      }
+      h1 {
+         line-height: 64px;
+         margin-bottom: 27px;       
+      }
+      .column1 {
+         max-width: 488px !important;
+      }
+   }
+}

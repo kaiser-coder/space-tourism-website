@@ -1,6 +1,8 @@
 #destination {
    @include Background('../assets/destination/background-destination-desktop.jpg');
 
+   flex-direction: column;
+
    #content {
       margin-bottom: 112px;
 
