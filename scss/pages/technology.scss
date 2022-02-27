@@ -1,6 +1,10 @@
 #technology {
    @include Background('../assets/technology/background-technology-desktop.jpg');
 
+   @media screen and (max-width: $breakpoint-tablet) {
+      @include Background('../assets/technology/background-technology-tablet.jpg');
+   }
+
    flex-direction: column;
 
    #content {
@@ -8,16 +12,30 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      gap: 4.5em;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+         flex-direction: column-reverse;
+      }
 
       .column1 {
          flex-direction: row;
          margin-left: 165px;
-         gap: 4em;
+         gap: 2em;
          align-items: center;
+
+         @media screen and (max-width: $breakpoint-tablet) {
+            flex-direction: column;
+            margin-left: 0;
+         }
 
          #switcher {
             flex-direction: column;
             gap: 1.5em;
+
+            @media screen and (max-width: $breakpoint-tablet) {
+               flex-direction: row;
+            }
 
             button {
                width: 80px;
@@ -52,6 +70,16 @@
 
       .column2 {
          flex-direction: column;
+         width: 515px;
+         height: 527px;
+         @include Background('../assets/technology/image-launch-vehicle-portrait.jpg');
+
+         @media screen and (max-width: $breakpoint-tablet) {
+            width: 768px;
+            height: 310px;
+            margin-bottom: 60px;
+            @include Background('../assets/technology/image-launch-vehicle-landscape.jpg');   
+         }
       }
    }
 }
