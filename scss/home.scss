@@ -1,25 +1,8 @@
 #home {
-   background-image: url('../assets/home/background-home-desktop.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
+   @include Background('../assets/home/background-home-desktop.jpg');
 
    #content {
       margin-top: 251px;
       margin-bottom: 131px;
-
-      h1 {
-         line-height: 172px;
-         text-transform: uppercase;
-      }
-
-      h5 {
-         line-height: 34px;
-         text-transform: uppercase;
-      }
-
-      p {
-         line-height: 32px;
-         text-align: justify;
-      }
    }
 }

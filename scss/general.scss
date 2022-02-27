@@ -75,6 +75,21 @@
    padding-top: 40px;
    min-height: 100vh;
    overflow: hidden;
+
+   h1 {
+      line-height: 172px;
+      text-transform: uppercase;
+   }
+
+   h5 {
+      line-height: 34px;
+      text-transform: uppercase;
+   }
+
+   p {
+      line-height: 32px;
+      text-align: justify;
+   }
 }
 
 .box {
@@ -84,7 +99,7 @@
    align-items: center;
 
    .column1, .column2 {
-      min-width: 445px;
+      max-width: 450px;
       flex-direction: column;
    }
 }
@@ -106,6 +121,32 @@
    a {
       text-decoration: none;
    }
+}
+
+.section-title {
+   font-family: 'Barlow Condensed', sans-serif;
+   text-transform: uppercase;
+   line-height: 34px;
+   letter-spacing: 4.725px;
+   margin-top: 76px;
+   margin-bottom: 64px;
+
+   span {
+      font-weight: bold;
+      opacity: 0.25;
+      padding-right: 28px;
+   }
+}
+
+#section.blank-line {
+   height: 1px;
+   display: block;
+   background: #FFFFFF;
+   mix-blend-mode: normal;
+   opacity: 0.25;
+   min-width: 473px;
+   margin-top: 50px;
+   margin-bottom: 28px;
 }
 
 /* 
@@ -158,13 +199,13 @@ header {
 
    .blank-line {
       height: 1px;
-      min-width: 473px;
       display: block;
-      position: relative;
-      z-index: 10;
       background: #FFFFFF;
       mix-blend-mode: normal;
       opacity: 0.25;
+      min-width: 473px;
+      position: relative;
+      z-index: 10;
       left: 50px;
    } 
 }

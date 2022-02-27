@@ -1,0 +1,31 @@
+#destination {
+   @include Background('../assets/destination/background-destination-desktop.jpg');
+
+   #content {
+      margin-bottom: 112px;
+
+      #travel_infos {
+         flex-direction: row;
+         text-transform: uppercase;
+         gap: 5em;
+      }
+
+      .navbar-list {
+         text-transform: uppercase;
+         gap: 1.5em;
+
+         li {
+            border-bottom: 3px solid transparent;
+            padding-bottom: 12px;
+
+            &.active, &:hover {
+               border-color: #ffffff;
+            }
+         }
+         
+         a {
+            text-decoration: none;
+         }
+      }
+   }
+}
