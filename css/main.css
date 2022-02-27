@@ -23,8 +23,7 @@ footer, header, nav, section, main {
 
 body {
   line-height: 1;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
 }
 
 ol, ul {
@@ -148,28 +147,60 @@ input {
   font-family: "Barlow", sans-serif;
 }
 
-/* 
- * Header style rules
- */
+/*
+ * Shared style rules
+*/
 .content {
   padding-top: 40px;
   min-height: 100vh;
+  overflow: hidden;
 }
 
+.box {
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10em;
+  align-items: center;
+}
+.box .column1, .box .column2 {
+  min-width: 445px;
+  flex-direction: column;
+}
+
+.cta {
+  width: 274px;
+  height: 274px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 300px;
+  border: none;
+  text-transform: uppercase;
+  align-self: center;
+}
+.cta:hover {
+  outline: 88px solid rgba(255, 255, 255, 0.1);
+}
+.cta a {
+  text-decoration: none;
+}
+
+/* 
+ * Header style rules
+ */
 header {
   flex-direction: row;
   align-items: center;
 }
 header nav {
   max-width: 830px;
-}
-header nav .navbar-list {
-  flex-direction: row;
-  background-color: aqua;
+  max-height: 96px;
   padding-left: 123px;
   padding-right: 165px;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px);
+}
+header nav .navbar-list {
+  flex-direction: row;
 }
 header nav .navbar-list a {
   text-decoration: none;
@@ -184,17 +215,19 @@ header nav .navbar-list a span {
   font-weight: bold;
 }
 header nav .navbar-list li {
-  padding-inline: 9px;
+  padding-inline: 14px;
   padding-top: 39px;
   padding-bottom: 35px;
   border-bottom: 3px solid transparent;
+  text-align: center;
+  width: max-content;
 }
 header nav .navbar-list li.active, header nav .navbar-list li:hover {
   border-bottom: 3px solid #ffffff;
 }
 header .blank-line {
   height: 1px;
-  width: 343px;
+  min-width: 473px;
   display: block;
   position: relative;
   z-index: 10;
@@ -207,7 +240,23 @@ header .blank-line {
 #home {
   background-image: url("../assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+}
+#home #content {
+  margin-top: 251px;
+  margin-bottom: 131px;
+}
+#home #content h1 {
+  line-height: 172px;
+  text-transform: uppercase;
+}
+#home #content h5 {
+  line-height: 34px;
+  text-transform: uppercase;
+}
+#home #content p {
+  line-height: 32px;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=main.css.map */

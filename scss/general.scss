@@ -67,15 +67,50 @@
    } 
 }
 
-/* 
- * Header style rules
- */
+/*
+ * Shared style rules
+*/
 
 .content {
    padding-top: 40px;
    min-height: 100vh;
+   overflow: hidden;
 }
 
+.box {
+   flex-direction: row;
+   justify-content: space-around;
+   gap: 10em;
+   align-items: center;
+
+   .column1, .column2 {
+      min-width: 445px;
+      flex-direction: column;
+   }
+}
+
+.cta {
+   width: 274px;
+   height: 274px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 300px;
+   border: none;
+   text-transform: uppercase;
+   align-self: center;
+
+   &:hover {
+      outline: 88px solid rgba(255, 255, 255, 0.1);
+   }
+
+   a {
+      text-decoration: none;
+   }
+}
+
+/* 
+ * Header style rules
+ */
 
 header {
    flex-direction: row;
@@ -83,15 +118,15 @@ header {
 
    nav {
       max-width: 830px;
-   }
-
-   nav .navbar-list {
-      flex-direction: row;
-      background-color: aqua;
+      max-height: 96px;
       padding-left: 123px;
       padding-right: 165px;
       background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(81.5485px);
+   }
+
+   nav .navbar-list {
+      flex-direction: row;
 
       a {
          text-decoration: none;
@@ -108,10 +143,12 @@ header {
       }   
 
       li {
-         padding-inline: 9px;
+         padding-inline: 14px;
          padding-top: 39px;
          padding-bottom: 35px;
          border-bottom: 3px solid transparent;
+         text-align: center;
+         width: max-content;
       }
 
       li.active, li:hover  {
@@ -121,7 +158,7 @@ header {
 
    .blank-line {
       height: 1px;
-      width: 343px;
+      min-width: 473px;
       display: block;
       position: relative;
       z-index: 10;
@@ -131,3 +168,4 @@ header {
       left: 50px;
    } 
 }
+
