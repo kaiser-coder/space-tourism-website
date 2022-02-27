@@ -194,6 +194,9 @@ input {
     flex-direction: column;
     text-align: center;
   }
+  .box .column1, .box .column2 {
+    align-items: center;
+  }
 }
 
 .cta {
@@ -348,6 +351,13 @@ header .blank-line {
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
+}
+@media screen and (max-width: 1239px) {
+  #destination {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 #destination #content {
   margin-bottom: 112px;

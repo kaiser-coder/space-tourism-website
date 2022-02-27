@@ -115,6 +115,10 @@
    @media screen and (max-width: $breakpoint-tablet) {
       flex-direction: column;
       text-align: center;
+
+      .column1, .column2 {
+         align-items: center;
+      }
    }
 
 }

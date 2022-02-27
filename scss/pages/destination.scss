@@ -1,6 +1,10 @@
 #destination {
    @include Background('../assets/destination/background-destination-desktop.jpg');
 
+   @media screen and (max-width: $breakpoint-tablet) {
+      @include Background('../assets/destination/background-destination-tablet.jpg');
+   }
+
    flex-direction: column;
 
    #content {
