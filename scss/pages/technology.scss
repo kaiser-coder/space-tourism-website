@@ -1,0 +1,57 @@
+#technology {
+   @include Background('../assets/technology/background-technology-desktop.jpg');
+
+   flex-direction: column;
+
+   #content {
+      margin-bottom: 101px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .column1 {
+         flex-direction: row;
+         margin-left: 165px;
+         gap: 4em;
+         align-items: center;
+
+         #switcher {
+            flex-direction: column;
+            gap: 1.5em;
+
+            button {
+               width: 80px;
+               height: 80px;
+               background-color: transparent;
+               border: 1px solid #ffffff;
+               border-radius: 50px;
+   
+               &:hover {
+                  background-color: #ffffff;
+                  color: #0B0D17;
+               }
+            }
+         }
+
+         #paragraph {
+            flex-direction: column;
+            width: 470px;
+            
+            h1 {
+               line-height: 64px;
+            }
+   
+            h3 {
+               line-height: 19px;
+               letter-spacing: 2.7px;
+               text-transform: uppercase;
+            }
+         }
+
+      }
+
+      .column2 {
+         flex-direction: column;
+      }
+   }
+}

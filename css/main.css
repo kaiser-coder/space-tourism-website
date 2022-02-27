@@ -208,7 +208,7 @@ input {
   letter-spacing: 4.725px;
   margin-top: 76px;
   margin-bottom: 64px;
-  margin-left: 3em;
+  margin-left: 1.5em;
 }
 .section-title span {
   font-weight: bold;
@@ -340,6 +340,55 @@ header .blank-line {
 }
 #crew #content .column1 {
   max-width: 488px !important;
+}
+
+#technology {
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+#technology #content {
+  margin-bottom: 101px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#technology #content .column1 {
+  flex-direction: row;
+  margin-left: 165px;
+  gap: 4em;
+  align-items: center;
+}
+#technology #content .column1 #switcher {
+  flex-direction: column;
+  gap: 1.5em;
+}
+#technology #content .column1 #switcher button {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+}
+#technology #content .column1 #switcher button:hover {
+  background-color: #ffffff;
+  color: #0B0D17;
+}
+#technology #content .column1 #paragraph {
+  flex-direction: column;
+  width: 470px;
+}
+#technology #content .column1 #paragraph h1 {
+  line-height: 64px;
+}
+#technology #content .column1 #paragraph h3 {
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+#technology #content .column2 {
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */
