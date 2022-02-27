@@ -1,6 +1,10 @@
 #crew {
    @include Background('../assets/crew/background-crew-desktop.jpg');
 
+   @media screen and (max-width: $breakpoint-tablet) {
+      @include Background('../assets/crew/background-crew-tablet.jpg');
+   }
+
    flex-direction: column;
 
    .section-title {
@@ -17,6 +21,10 @@
       h1 {
          line-height: 64px;
          margin-bottom: 27px;       
+
+         @media screen and (max-width: $breakpoint-tablet) {
+            margin-top: 60px;
+         }
       }
       .column1 {
          max-width: 488px !important;

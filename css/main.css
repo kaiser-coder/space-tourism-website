@@ -388,6 +388,13 @@ header .blank-line {
   background-size: cover;
   flex-direction: column;
 }
+@media screen and (max-width: 1239px) {
+  #crew {
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 #crew .section-title {
   margin-bottom: 0;
 }
@@ -400,6 +407,11 @@ header .blank-line {
 #crew #content h1 {
   line-height: 64px;
   margin-bottom: 27px;
+}
+@media screen and (max-width: 1239px) {
+  #crew #content h1 {
+    margin-top: 60px;
+  }
 }
 #crew #content .column1 {
   max-width: 488px !important;
