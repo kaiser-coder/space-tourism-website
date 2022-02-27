@@ -151,10 +151,15 @@ input {
  * Shared style rules
 */
 .content {
-  padding-top: 40px;
   overflow-x: hidden;
   height: 100vh;
   justify-content: space-between;
+  padding-top: 40px;
+}
+@media screen and (max-width: 1240px) {
+  .content {
+    padding-top: 0;
+  }
 }
 .content h1 {
   line-height: 172px;
@@ -168,16 +173,27 @@ input {
   line-height: 32px;
   text-align: justify;
 }
+@media screen and (max-width: 1240px) {
+  .content p {
+    text-align: center;
+  }
+}
 
 .box {
-  flex-direction: row;
   justify-content: space-around;
   gap: 10em;
   align-items: center;
+  flex-direction: row;
 }
 .box .column1, .box .column2 {
   max-width: 450px;
   flex-direction: column;
+}
+@media screen and (max-width: 1240px) {
+  .box {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .cta {
@@ -234,13 +250,30 @@ header {
   flex-direction: row;
   align-items: center;
 }
+@media screen and (max-width: 1240px) {
+  header {
+    justify-content: space-between;
+    padding-inline: 0 !important;
+  }
+}
+@media screen and (max-width: 1240px) {
+  header .logo {
+    padding-left: 2em;
+  }
+}
 header nav {
-  max-width: 830px;
-  max-height: 96px;
-  padding-left: 123px;
-  padding-right: 165px;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px);
+  max-height: 96px;
+  max-width: 830px;
+  padding-left: 123px;
+  padding-right: 165px;
+}
+@media screen and (max-width: 1240px) {
+  header nav {
+    padding-left: 48px;
+    padding-right: 46px;
+  }
 }
 header nav .navbar-list {
   flex-direction: row;
@@ -258,12 +291,17 @@ header nav .navbar-list a span {
   font-weight: bold;
 }
 header nav .navbar-list li {
-  padding-inline: 14px;
-  padding-top: 39px;
-  padding-bottom: 35px;
-  border-bottom: 3px solid transparent;
   text-align: center;
   width: max-content;
+  border-bottom: 3px solid transparent;
+  padding-top: 39px;
+  padding-bottom: 35px;
+  padding-inline: 14px;
+}
+@media screen and (max-width: 1240px) {
+  header nav .navbar-list li span {
+    display: none;
+  }
 }
 header nav .navbar-list li.active, header nav .navbar-list li:hover {
   border-bottom: 3px solid #ffffff;
@@ -279,11 +317,23 @@ header .blank-line {
   z-index: 10;
   left: 50px;
 }
+@media screen and (max-width: 1240px) {
+  header .blank-line {
+    display: none;
+  }
+}
 
 #home {
   background-image: url("../assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 1240px) {
+  #home {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 #home #content {
   margin-top: 251px;

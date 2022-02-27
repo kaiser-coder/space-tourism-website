@@ -1,6 +1,10 @@
 #home {
    @include Background('../assets/home/background-home-desktop.jpg');
 
+   @media screen and (max-width: $breakpoint-tablet) {
+      @include Background('../assets/home/background-home-tablet.jpg');
+   }
+
    #content {
       margin-top: 251px;
       margin-bottom: 131px;
